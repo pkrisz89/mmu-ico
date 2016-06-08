@@ -1,0 +1,23 @@
+// colours
+$grey : #eee;
+$white: #fff;
+$black : #333;
+$lightblack: lighten($black, 60%);
+$lightgrey: lighten($black, 75%);
+$gold  : #D4AF37;
+$lightgold: lighten($gold, 30%);
+
+//Fonts
+$header : 'Playfair Display', serif;
+$body : 'Lato', sans-serif;
+
+
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+ 
+ 
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 50em)";
+
