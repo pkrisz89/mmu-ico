@@ -7,10 +7,35 @@ $lightgrey: lighten($black, 75%);
 $gold  : #D4AF37;
 $lightgold: lighten($gold, 30%);
 
+// additional colours RGB & HEX Codes
+$blue : #2980B9; //41,128,185
+$lightGrey : #EFF3F3; //239,243,243
+$greySecond : #ECECEC; //236,236,236
+$dark: #1C1C1C; //28,28,28
+$blueNavy: #073F63; //7,63,99
+$navyTwo: #1A4F72; //26,79,114
+$flatBlue: #29506F; //41,80,111
+$greyThird: #CBCACA; //203,202,202
+$orangeRed: #DF5430; //223,84,48
+$orangeLight: #F2A845; //242,168,69
+
+// colours for content
+$sidebarBlue: lighten($blue, 15%);
+$contentBox: lighten($greyThird, 75%);
+$activeNav: lighten($navyTwo, 75%);
+$studentButton: $blue;
+$studentCTA: $orangeRed;
+$gradActive: $orangeLight;
+$industryName: $blue;
+
 //Fonts
 $header : 'Playfair Display', serif;
-$body : 'Lato', sans-serif;
+$body 	: 'Titillium Web', sans-serif;
 
+//Font weights
+$normal: 400;
+$semibold: 600;
+$bold: 700;
 
 // grid variables
 $grid-columns: 12;
@@ -20,4 +45,3 @@ $grid-max-width: 65em;
 // breakpoints
 $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 50em)";
-
