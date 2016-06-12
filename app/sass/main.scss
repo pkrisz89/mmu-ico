@@ -1,5 +1,12 @@
+//General imports
 @import "variables";
 @import "mixins";
+
+//External imports
+@import "modules/header";
+@import "modules/profiles";
+@import "modules/content";
+@import "modules/footer";
 
 
 *, *:after, *:before {
@@ -16,7 +23,6 @@
 	height:1px;
 	overflow:hidden;
 }
-
 
 
 //Grids 
@@ -43,3 +49,26 @@
             }           
         }   
     }
+
+
+
+//Body style
+
+body {
+    background: $background;
+    color: $dark;
+    font-family: $contentFont;
+}
+
+#{headings()} {
+    font: $contentFont;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    padding-bottom: 10px;
+}
