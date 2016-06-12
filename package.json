@@ -1,5 +1,5 @@
 {
-  "name": "new-portfolio",
+  "name": "mmu-ico-redesign",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pkrisz89/new-portfolio.git"
+    "url": "https://github.com/pkrisz89/mmu-ico.git"
   },
-  "author": "Kris Pinter",
+  "author": "Kris Pinter, Piotr Osiak",
   "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1"
