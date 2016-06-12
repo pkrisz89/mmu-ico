@@ -1,0 +1,55 @@
+header {
+  margin: 0;
+  padding: 0;
+  /* Header Logo */
+  /* Navigation */ }
+  header .intro {
+    background: #2980B9;
+    padding: 10px;
+    margin-left: 5%;
+    text-align: center;
+    width: 35%;
+    max-width: 100%;
+    color: #EFF3F3; }
+    header .intro h1 {
+      font-size: 1.55em;
+      font-weight: 600; }
+    header .intro h2 {
+      font-size: 1.35em;
+      font-weight: 400; }
+    header .intro img {
+      width: 72px;
+      height: auto;
+      display: block;
+      margin: 0 auto; }
+  header nav {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 60%;
+    background: #2980B9; }
+    header nav ul {
+      display: block;
+      list-style-type: none; }
+      header nav ul li {
+        float: left; }
+        header nav ul li a {
+          text-decoration: none;
+          font-size: .9em;
+          color: #EFF3F3;
+          padding: 10px;
+          display: block; }
+          header nav ul li a:hover {
+            background: #1A4F72; }
+      header nav ul .grads {
+        float: right;
+        margin-right: 25px; }
+        header nav ul .grads a {
+          background: #ECECEC;
+          color: #DF5430;
+          font-weight: 600; }
+          header nav ul .grads a:hover {
+            background: #ECECEC;
+            text-decoration: underline; }

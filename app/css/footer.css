@@ -1,0 +1,28 @@
+footer .footerinfo p {
+  *zoom: 1; }
+  footer .footerinfo p:before, footer .footerinfo p:after {
+    content: " ";
+    display: table; }
+  footer .footerinfo p:after {
+    clear: both; }
+
+footer {
+  color: #CBCACA;
+  font-size: .75em;
+  margin: 0;
+  background: #1C1C1C; }
+  footer .footerinfo {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block; }
+    footer .footerinfo p {
+      margin: 0;
+      padding: 15px;
+      float: left; }
+      footer .footerinfo p a {
+        text-decoration: none;
+        color: #ECECEC;
+        display: block; }
+        footer .footerinfo p a:hover {
+          text-decoration: underline; }
