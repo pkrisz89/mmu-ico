@@ -1,17 +1,13 @@
 <h2>Groups</h2>
 <div ng-repeat="x in vm.yearTwoGroups">
-            <ul>
-                <li>{{ x.groupname}}</li>
-                <li>{{ x.portfolio}}</li>
-            </ul>
-        </div>
+    <a href="{{x.portfolio}}">{{ x.groupname}}</a>
+</div>
         
-
-<div ng-repeat="x in vm.yearTwo">
-            <ul>
-                <li>{{ x.name}}</li>
-                <li>{{ x.avatar}}</li>
-                <li>{{ x.course}}</li>
-                <li>{{ x.portfolio}}</li>
-            </ul>
+<h2>Students</h2>
+<p>Search by name:<input ng-model="byName"></p>
+<div ng-repeat="x in vm.yearTwo | filter: byName">
+    <h3>{{x.name}}</h3>
+    <img ng-src="images/{{x.avatar}}" alt="">
+    <p>Course: {{x.course}}</p>
+    <a href="{{x.portfolio}}">View portfolio</a>
 </div>

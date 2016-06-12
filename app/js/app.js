@@ -17,7 +17,7 @@ app.controller('dataController', function($http) {
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "index.html"
+        templateUrl : "templates/home.html"
     })
     .when("/year-one", {
         templateUrl : "templates/year-one.html"
