@@ -1,4 +1,6 @@
-var app = angular.module("studentApp", []); 
+(function(){
+
+var app = angular.module("studentApp", ['ngRoute']); 
 
 app.controller('dataController', function($http) {
     var vm = this;
@@ -9,6 +11,32 @@ app.controller('dataController', function($http) {
         vm.yearThree = response.data.yearThree;
         vm.graduates = response.data.graduates;
     });
+    });
 
+    
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "index.html"
+    })
+    .when("/year-one", {
+        templateUrl : "templates/year-one.html"
+    })
+    .when("/year-two", {
+        templateUrl : "templates/year-two.html"
+    })
+    .when("/year-three", {
+        templateUrl : "templates/year-three.html"
+    })
+    .when("/graduates", {
+        templateUrl : "templates/our-graduates.html"
+    })
+    .when("/404", {
+        templateUrl : "templates/404.html"
+    })
+    .otherwise({ redirectTo: '/404' });
 });
+    
+}());
+
 
