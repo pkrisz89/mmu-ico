@@ -1,0 +1,66 @@
+{
+  "year-one": [
+    {
+        "name": "John Doe from year1",
+        "course": "Web Dev (year1)",
+        "portfolio": "http://none",
+        "avatar": "none"
+    },
+    {
+        "name": "Mary Doe from year1",
+        "course": "Web Dev (year1)",
+        "portfolio": "http://none",
+        "avatar": "none"
+    }
+  ],
+  
+  "year-two": [
+    {
+        "name": "John Doe from year2",
+        "course": "Web Dev (year2)",
+        "portfolio": "http://none",
+        "avatar": "none"
+    },
+    {
+        "name": "Mary Doe from year2",
+        "course": "Web Dev (year2)",
+        "portfolio": "http://none",
+        "avatar": "none"
+    },
+        {"groups": [
+             {"groupname": "Group 01"}
+            ]}
+  ],
+  
+  "year-three": [
+    {
+        "name": "John Doe from year3",
+        "course": "Web Dev (year3)",
+        "portfolio": "http://none",
+        "avatar": "none"
+    },
+    {
+        "name": "Mary Doe from year2",
+        "course": "Web Dev (year2)",
+        "portfolio": "http://none",
+        "avatar": "none"
+    }
+  ],
+  
+  "graduates": [
+    {
+        "name": "John Doe Graduate",
+        "company": "Microsoft",
+        "role": "UX Designer",
+        "twitter": "@JohnDoeTweets",
+        "avatar": "none"
+    },
+    {
+        "name": "Mary Doe Graduate",
+        "company": "Sky",
+        "role": "Web Developer",
+        "twitter": "@MaryTweets",
+        "avatar": "none"
+    }
+  ]
+}
