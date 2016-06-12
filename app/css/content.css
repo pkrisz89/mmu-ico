@@ -1,0 +1,31 @@
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  main aside,
+  main .myContent {
+    float: left; }
+  main aside {
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(41, 128, 185, 0.15);
+    padding: 20px;
+    width: 35%; }
+    main aside ul {
+      list-style-type: none; }
+  main .myContent {
+    margin-top: -37px;
+    margin-bottom: 30px;
+    padding: 25px;
+    width: 53%; }
+    main .myContent h1 {
+      font-size: 1.75em;
+      line-height: 1.2em;
+      margin-bottom: 30px !important;
+      font-weight: 600; }
+    main .myContent h2 {
+      font-size: 1.35em;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 10px; }

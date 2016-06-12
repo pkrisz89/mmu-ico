@@ -25,7 +25,6 @@ header {
     margin-left: 5%;
     text-align: center;
     width: 35%;
-    max-width: 100%;
     color: #EFF3F3; }
     header .intro h1 {
       font-size: 1.55em;
@@ -66,9 +65,51 @@ header {
           background: #ECECEC;
           color: #DF5430;
           font-weight: 600; }
+          header nav ul .grads a i {
+            margin-right: 5px; }
           header nav ul .grads a:hover {
             background: #ECECEC;
             text-decoration: underline; }
+
+footer .footerinfo p, .wrapper, .row {
+  *zoom: 1; }
+  footer .footerinfo p:before, .wrapper:before, .row:before, footer .footerinfo p:after, .wrapper:after, .row:after {
+    content: " ";
+    display: table; }
+  footer .footerinfo p:after, .wrapper:after, .row:after {
+    clear: both; }
+
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  main aside,
+  main .myContent {
+    float: left; }
+  main aside {
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(41, 128, 185, 0.15);
+    padding: 20px;
+    width: 35%; }
+    main aside ul {
+      list-style-type: none; }
+  main .myContent {
+    margin-top: -37px;
+    margin-bottom: 30px;
+    padding: 25px;
+    width: 53%; }
+    main .myContent h1 {
+      font-size: 1.75em;
+      line-height: 1.2em;
+      margin-bottom: 30px !important;
+      font-weight: 600; }
+    main .myContent h2 {
+      font-size: 1.35em;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 10px; }
 
 footer .footerinfo p, .wrapper, .row {
   *zoom: 1; }
@@ -120,35 +161,6 @@ footer {
   padding: 1em;
   width: 100%;
   min-height: 1px; }
-
-@media only screen and (min-width: 50em) {
-  .wrapper {
-    width: 95%;
-    max-width: 65em; }
-  .column-1 {
-    width: 8.33333%; }
-  .column-2 {
-    width: 16.66667%; }
-  .column-3 {
-    width: 25%; }
-  .column-4 {
-    width: 33.33333%; }
-  .column-5 {
-    width: 41.66667%; }
-  .column-6 {
-    width: 50%; }
-  .column-7 {
-    width: 58.33333%; }
-  .column-8 {
-    width: 66.66667%; }
-  .column-9 {
-    width: 75%; }
-  .column-10 {
-    width: 83.33333%; }
-  .column-11 {
-    width: 91.66667%; }
-  .column-12 {
-    width: 100%; } }
 
 body {
   background: #ECECEC;

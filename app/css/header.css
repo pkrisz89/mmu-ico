@@ -9,7 +9,6 @@ header {
     margin-left: 5%;
     text-align: center;
     width: 35%;
-    max-width: 100%;
     color: #EFF3F3; }
     header .intro h1 {
       font-size: 1.55em;
@@ -50,6 +49,8 @@ header {
           background: #ECECEC;
           color: #DF5430;
           font-weight: 600; }
+          header nav ul .grads a i {
+            margin-right: 5px; }
           header nav ul .grads a:hover {
             background: #ECECEC;
             text-decoration: underline; }
