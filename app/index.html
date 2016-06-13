@@ -2,6 +2,7 @@
 <html lang="en-GB" ng-app="studentApp">
 
 <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MMU Student Websites</title>
@@ -32,7 +33,7 @@
             <h1>Information &amp; Communications</h1>
             <h2>Student Websites</h2>
         </div>
-		<nav>
+		<!--nav>
             <ul>
                 <!-- <li><a href="#/">Home</a></li> -->
                 <li><a href="#/"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
@@ -41,7 +42,13 @@
                 <li><a href="#/year-three">Year 3</a></li>
                 <li class="grads"><a href="#/graduates"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Our Graduates</a></li>
             </ul>
-		</nav>
+		</nav-->
+        
+    <nav>
+        <ul ng-repeat="page in vm.pages">
+            <li><a href="{{page.url}}" ng-class="{'active': page.active}" ng-click="vm.setActive(page)">{{page.name}}</a></li>
+        </ul>
+    </nav>
 
     </header>
     <main class="wrapper" id="skipnav" ng-view>
