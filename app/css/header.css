@@ -56,15 +56,11 @@ header {
           color: #EFF3F3;
           padding: 10px;
           display: block; }
-
-          header nav ul li a:hover{
-
           @media (max-width: 40em) {
             header nav ul li a {
               font-weight: 600;
               padding: 15px; } }
           header nav ul li a:hover {
-
             background: #1A4F72; }
       header nav ul .grads {
         float: right;
@@ -85,9 +81,6 @@ header {
           header nav ul .grads a:hover {
             color: #DF5430;
             background: #ECECEC;
-
-            text-decoration: underline; }
-
             text-decoration: underline;
             border-bottom: none; }
             @media (max-width: 40em) {
@@ -95,4 +88,3 @@ header {
                 background: #e15f3d;
                 color: #ECECEC;
                 text-decoration: none; } }
-
