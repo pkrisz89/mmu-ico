@@ -8,38 +8,57 @@ main {
 
 	aside,
 	.myContent {
-		float: left;
+		@include clearfix;
+		display: inline-block;
 	}
 
 	aside {
+		float: left;
 		margin-left: 5%;
 		margin-top: 30px;
 		margin-bottom: 30px;
 		background: $sidebarBlue;
 		padding: 20px;
 		width: 35%;
+		// BREAKPOINTS HERE
+		@include breakpoint(sml) {
+			width: 100%;
+			margin: 0;
+			margin-top: 30px;
+		}//bp-small
+		// BREAKPOINTS HERE
 		ul {
 			list-style-type: none;
 		}//ul
 	}//aside
 
 	.myContent {
-		margin-top: -37px;
+		margin-top: -67px;
 		margin-bottom: 30px;
 		padding: 25px;
-		width: 53%;
+		width: 60%;
+		// BREAKPOINTS HERE
+		@include breakpoint(med) {
+			margin-top: 0;
+		}
+		@include breakpoint(sml) {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 30px;
+		}//bp-small
+		// BREAKPOINTS HERE
 		h1 {
 			font-size: 1.75em;
 			line-height: 1.2em;
 			margin-bottom: 30px !important;
 			font-weight: $semibold;
-		}
+		}//h1
 		h2 {
 			font-size: 1.35em;
 			font-weight: $semibold;
 			margin-top: 10px;
 			margin-bottom: 10px;
-		}
+		}//h2
 	} //myContent
 }//main
 	
