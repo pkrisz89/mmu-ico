@@ -6,6 +6,7 @@ main {
 	margin: 0;
 	padding: 0;
 
+	/* HOME PAGE STYLING */
 	aside,
 	.myContent {
 		@include clearfix;
@@ -60,5 +61,126 @@ main {
 			margin-bottom: 10px;
 		}//h2
 	} //myContent
+
+
+	/* YEAR ONE PAGE STYLING */
+	.yearWrap {
+		margin: auto;
+		margin-top: 5px;
+		margin-bottom: 30px;
+		padding: 0;
+		@include breakpoint(med) {
+			margin-top: 15px;
+		}//bp-small
+
+		.back {
+			position: relative;
+			top: 67px;
+			.backimage {
+				width: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0;
+				z-index: -10;
+				@include backImage('../images/test.jpg', 360px, cover);
+				@include breakpoint(med) {
+					//top: 407px;
+				}//bp-med
+				@include breakpoint(sml) {
+					//top: 399px;
+				}//bp-small
+			}//backimage
+				/* BACK IMAGE OPTIONAL */
+		}//back
+
+		h1 {
+			font-size: 2em;
+			text-align: center;
+			margin-bottom: 3%;
+			margin-top: 2%;
+		}
+		.bg-transparent {
+			background: $contentBox;
+			border-top-left-radius: 7px;
+			border-top-right-radius: 7px;
+		}
+		.bg-container {
+			width: 1200px;
+			max-width: 100%;
+			margin: auto;
+			padding: 10px;
+			@include breakpoint(med) {
+				border-radius: 0;
+			}//bp-med
+
+			h2 {
+				text-align: center;
+			}//H2
+			.search {
+				text-align: center;
+				width: 100%;
+				max-width: 420px;
+				margin: auto;
+				font-size: 1em;
+				margin-top: 25px;
+				margin-bottom: 25px;
+				border-top: 1px solid $navyTwo;
+				padding-top: 15px;
+				@include breakpoint(sml) {
+					margin-top: 25px;
+					margin-bottom: 25px;
+				}//BP-SMALL
+				p {
+					margin-bottom: 5px;
+				}//p
+				input {
+					margin-left: 10px;
+					padding: 7px;
+					width: 150px;
+					border: none;
+					background: none;
+					border-bottom: 2px solid $flatBlue;
+					transition: all .3s ease-in-out;
+					font-size: .85em;
+					letter-spacing: 0.05em;
+					&:focus {
+						color: $flatBlue;
+						outline: none;
+					}//focus
+				}//input
+			}//search
+		}//bg-container
+		.twogroups {
+			display: flex;
+			display: -webkit-box;
+		  	display: -moz-box;
+		  	display: -ms-flexbox;
+		  	display: -webkit-flex;
+		  	-webkit-flex-flow: row wrap;
+		  	justify-content: space-around;
+			width: 960px;
+			max-width: 100%;
+			margin: auto;
+			padding: 5px;
+			margin-bottom: 10%;
+			border-bottom: 1px solid $navyTwo;
+			.thegroups {
+				padding-top: 22px;
+				padding-bottom: 22px;
+				a {
+					text-decoration: none;
+					background: $orangeLight;
+					color: $background;
+					font-size: 1.2em;
+					text-align: center;
+					padding: 10px;
+					transition: all .2s ease-in-out;
+					&:hover {
+						background: $orangeRed;
+					}//hover
+				}//thegroups a
+			}//thegroups
+		}//twogroups
+	}//yearWrap
 }//main
 	

@@ -1,13 +1,53 @@
-<h2>Groups</h2>
-<div ng-repeat="x in vm.yearTwoGroups">
-    <a href="{{x.portfolio}}">{{ x.groupname}}</a>
-</div>
-        
-<h2>Students</h2>
-<p>Search by name:<input ng-model="byName"></p>
-<div ng-repeat="x in vm.yearTwo | filter: byName">
-    <h3>{{x.name}}</h3>
-    <img ng-src="images/{{x.avatar}}" alt="">
-    <p>Course: {{x.course}}</p>
-    <a href="{{x.portfolio}}">View portfolio</a>
+<div class="yearWrap">
+
+	<div class="back">
+		<span class="backimage"></span>
+	</div>
+
+	<h1>Year Two</h1>
+	<!-- STUDENTS YEAR TWO GROUPS -->
+	<div class="bg-container bg-transparent">
+		<h2>Groups</h2>
+		<p>The students work in groups on a client based project moving from client brief through to site launch. This includes pitches, research, design, build, and testing. It will introduce techniques in UX and IA. Each group will make the most of their skills in project management, content development etc.</p>
+
+		<p>Students are tasked to create an 'alternative' web site for the department that reflects our unique character, and provides a student informed perspective. Using the various talents in the group they are to manage, create and devlop the content and coding to produce something that conforms to standards and best practices, is usable and accessible, whilst being attractive and engaging.</p>
+
+		<p>The group based portfolio records all stages of the web site development process.</p>
+
+		<p>All student web sites are sponsored and hosted by our friends at <a href="">34sp.com</a></p>
+	
+		<!-- GROUPS PROJECTS -->
+		<div class="twogroups">
+			<div class="thegroups" ng-repeat="x in vm.yearTwoGroups">
+		    	<a href="{{x.portfolio}}">{{ x.groupname}}</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- STUDENTS YEAR TWO -->
+	<div class="bg-container">
+	        
+		<h2>Student Portfolio Sites</h2>
+		<p>As a revision exercise, students are required to develop a small portfolio site at the start of the year. Interested students will continue to develop their portfolio until they graduate.</p>
+		
+		<!-- SEARCH FEATURE -->
+		<div class="search">
+			<p>Search by name:<input ng-model="byName" placeholder="Search..."></p>
+		</div>
+
+		<div class="wrap123">
+			<div class="student123" ng-repeat="x in vm.yearTwo | filter: byName">
+				<div class="stucon">
+					<!-- Student Profiles Container -->
+					<img ng-src="images/{{x.avatar}}" alt="student" title="Student">
+					<div class="profile">
+						<h3>{{x.name}}</h3>
+				    	<p>Course: {{x.course}}</p>
+				    	<a href="{{x.portfolio}}">View ortfolio</a>	
+					</div>
+				</div>			
+			</div>
+		</div>		
+	</div>
+
 </div>
