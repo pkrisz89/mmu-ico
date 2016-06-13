@@ -4,21 +4,43 @@ main {
   padding: 0; }
   main aside,
   main .myContent {
-    float: left; }
+    display: inline-block; }
+    main aside:before, main aside:after,
+    main .myContent:before,
+    main .myContent:after {
+      content: '';
+      display: table; }
+    main aside:after,
+    main .myContent:after {
+      clear: both; }
   main aside {
+    float: left;
     margin-left: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
     background: rgba(41, 128, 185, 0.15);
     padding: 20px;
     width: 35%; }
+    @media (max-width: 30em) {
+      main aside {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px; } }
     main aside ul {
       list-style-type: none; }
   main .myContent {
-    margin-top: -37px;
+    margin-top: -67px;
     margin-bottom: 30px;
     padding: 25px;
-    width: 53%; }
+    width: 60%; }
+    @media (max-width: 40em) {
+      main .myContent {
+        margin-top: 0; } }
+    @media (max-width: 30em) {
+      main .myContent {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px; } }
     main .myContent h1 {
       font-size: 1.75em;
       line-height: 1.2em;

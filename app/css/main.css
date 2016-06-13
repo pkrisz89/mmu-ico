@@ -1,17 +1,17 @@
-footer .footerinfo p, .wrapper, .row {
+footer .footerinfo p {
   *zoom: 1; }
-  footer .footerinfo p:before, .wrapper:before, .row:before, footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:before, footer .footerinfo p:after {
     content: " ";
     display: table; }
-  footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:after {
     clear: both; }
 
-footer .footerinfo p, .wrapper, .row {
+footer .footerinfo p {
   *zoom: 1; }
-  footer .footerinfo p:before, .wrapper:before, .row:before, footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:before, footer .footerinfo p:after {
     content: " ";
     display: table; }
-  footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:after {
     clear: both; }
 
 header {
@@ -26,6 +26,10 @@ header {
     text-align: center;
     width: 35%;
     color: #EFF3F3; }
+    @media (max-width: 40em) {
+      header .intro {
+        width: 100%;
+        margin: 0; } }
     header .intro h1 {
       font-size: 1.55em;
       font-weight: 600; }
@@ -45,38 +49,68 @@ header {
     right: 0;
     width: 60%;
     background: #2980B9; }
+    @media (max-width: 40em) {
+      header nav {
+        position: relative;
+        width: 100%;
+        top: 0; } }
     header nav ul {
       display: block;
       list-style-type: none; }
       header nav ul li {
         float: left; }
+        header nav ul li i {
+          margin-right: 5px; }
+        @media (max-width: 40em) {
+          header nav ul li {
+            width: 50%;
+            text-align: center;
+            background: #2980B9; } }
         header nav ul li a {
           text-decoration: none;
           font-size: .9em;
           color: #EFF3F3;
           padding: 10px;
           display: block; }
+          @media (max-width: 40em) {
+            header nav ul li a {
+              font-weight: 600;
+              padding: 15px; } }
           header nav ul li a:hover {
             background: #1A4F72; }
       header nav ul .grads {
         float: right;
         margin-right: 25px; }
+        @media (max-width: 40em) {
+          header nav ul .grads {
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 0;
+            border-bottom: 1px solid #2980B9; } }
         header nav ul .grads a {
           background: #ECECEC;
-          color: #DF5430;
+          color: #2980B9;
           font-weight: 600; }
           header nav ul .grads a i {
             margin-right: 5px; }
           header nav ul .grads a:hover {
+            color: #DF5430;
             background: #ECECEC;
-            text-decoration: underline; }
+            text-decoration: underline;
+            border-bottom: none; }
+            @media (max-width: 40em) {
+              header nav ul .grads a:hover {
+                background: #e15f3d;
+                color: #ECECEC;
+                text-decoration: none; } }
 
-footer .footerinfo p, .wrapper, .row {
+footer .footerinfo p {
   *zoom: 1; }
-  footer .footerinfo p:before, .wrapper:before, .row:before, footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:before, footer .footerinfo p:after {
     content: " ";
     display: table; }
-  footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:after {
     clear: both; }
 
 main {
@@ -85,21 +119,43 @@ main {
   padding: 0; }
   main aside,
   main .myContent {
-    float: left; }
+    display: inline-block; }
+    main aside:before, main aside:after,
+    main .myContent:before,
+    main .myContent:after {
+      content: '';
+      display: table; }
+    main aside:after,
+    main .myContent:after {
+      clear: both; }
   main aside {
+    float: left;
     margin-left: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
     background: rgba(41, 128, 185, 0.15);
     padding: 20px;
     width: 35%; }
+    @media (max-width: 30em) {
+      main aside {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px; } }
     main aside ul {
       list-style-type: none; }
   main .myContent {
-    margin-top: -37px;
+    margin-top: -67px;
     margin-bottom: 30px;
     padding: 25px;
-    width: 53%; }
+    width: 60%; }
+    @media (max-width: 40em) {
+      main .myContent {
+        margin-top: 0; } }
+    @media (max-width: 30em) {
+      main .myContent {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px; } }
     main .myContent h1 {
       font-size: 1.75em;
       line-height: 1.2em;
@@ -111,19 +167,23 @@ main {
       margin-top: 10px;
       margin-bottom: 10px; }
 
-footer .footerinfo p, .wrapper, .row {
+footer .footerinfo p {
   *zoom: 1; }
-  footer .footerinfo p:before, .wrapper:before, .row:before, footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:before, footer .footerinfo p:after {
     content: " ";
     display: table; }
-  footer .footerinfo p:after, .wrapper:after, .row:after {
+  footer .footerinfo p:after {
     clear: both; }
 
 footer {
   color: #CBCACA;
   font-size: .75em;
   margin: 0;
+  text-align: right;
   background: #1C1C1C; }
+  @media (max-width: 40em) {
+    footer {
+      text-align: center; } }
   footer .footerinfo {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -156,11 +216,16 @@ footer {
   height: 1px;
   overflow: hidden; }
 
-[class*='column-'] {
-  float: left;
-  padding: 1em;
-  width: 100%;
-  min-height: 1px; }
+.wrapper {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .wrapper:before, .wrapper:after {
+    content: '';
+    display: table; }
+  .wrapper:after {
+    clear: both; }
 
 body {
   background: #ECECEC;
