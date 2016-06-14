@@ -3,8 +3,9 @@
 
 var app = angular.module("studentApp", ['ngRoute']); 
 
-app.controller('dataController', function($http) {
+app.controller('dataController', function($http, $location) {
     var vm = this;
+    vm.activePage = 'Home';
     
     $http.get("students.json").then(function(response) {
         vm.yearOne = response.data.yearOne;
@@ -14,42 +15,35 @@ app.controller('dataController', function($http) {
         vm.graduates = response.data.graduates;
     });
     
+        vm.setActivePage = function(name) {
+            vm.activePage = name;
+        };
+    
     vm.pages = [
             {
                 'name': 'Home',
-                'active': false,
                 'url': '#/'
             },
             {
                 'name': 'Year One',
-                'active': false,
                 'url': '#/year-one'     
             },
             {
                 'name': 'Year Two',
-                'active': false,
                 'url': '#/year-two'
             },
             {
                 'name': 'Year Three',
-                'active': false,
                 'url': '#/year-three'
             },
             {
                 'name': 'Graduates',
-                'active': false,
                 'url': '#/graduates'
             }];
+
     
-    
-    vm.setActive = function(page) {
-        //for each vm.pages, set active false, then set current page active to true
-        // OR
-        // change this to set the current page to an object, check currentPage.name == page.name in view
-        //this.page = {};
-        page.active = true;
-    }
     });
+    
 
     
 app.config(function($routeProvider, $locationProvider) {

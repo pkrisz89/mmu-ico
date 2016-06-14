@@ -35,7 +35,7 @@
         </div>
 		<!--nav>
             <ul>
-                <!-- <li><a href="#/">Home</a></li> -->
+                <!-- <li><a href="#/">Home</a></li>
                 <li><a href="#/"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
                 <li><a href="#/year-one">Year 1</a></li>
                 <li><a href="#/year-two">Year 2</a></li>
@@ -45,11 +45,11 @@
 		</nav-->
         
     <nav>
-        <ul ng-repeat="page in vm.pages">
-            <li><a href="{{page.url}}" ng-class="{'active': page.active}" ng-click="vm.setActive(page)">{{page.name}}</a></li>
+        <ul>
+            <li ng-repeat="page in vm.pages" ng-class="{active: vm.activePage === page.name}"><a href="{{page.url}}" ng-click="vm.setActivePage(page.name)">{{page.name}}</a></li>
         </ul>
     </nav>
-
+    
     </header>
     <main class="wrapper" id="skipnav" ng-view>
       <!-- CONTENT WRITTEN IN TEMPLATE HTML PAGES USING ANGULAR JS AND JSON FILE -->
