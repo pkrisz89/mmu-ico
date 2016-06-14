@@ -1,7 +1,34 @@
-<p>Search by name:<input ng-model="byName"></p>
-<div ng-repeat="x in vm.yearOne | filter: byName">
-    <h3>{{x.name}}</h3>
-    <img ng-src="images/{{x.avatar}}" alt="">
-    <p>Course: {{x.course}}</p>
-    <a href="{{x.portfolio}}">View portfolio</a>
+<div class="yearWrap">
+
+	<div class="back">
+		<span class="backimage"></span>
+	</div>
+
+	<h1>Year One</h1>
+	<div class="bg-container bg-transparent">
+
+		<h2>Student Sites</h2>
+		<p>Students create a simple portfolio site using clean, valid semantic HTML. The sites should be both usable and accessible. Some students may show design flair, some less. What we are looking for is fully formed code that is valid, semantic and adheres to good practices in web accessibility and usability.</p>
+		<p>All student web sites are sponsored and hosted by our friends at <a href="">34sp.com</a></p>
+
+		<div class="search">
+			<p>Search by name:<input ng-model="byName" placeholder="Search..."></p>
+		</div>
+		
+		<div class="wrap123">
+			<div class="student123" ng-repeat="x in vm.yearOne | filter: byName">
+				<div class="stucon"> <!-- Student Profiles Container -->
+			    	<img ng-src="images/{{x.avatar}}" alt="student profile" title="Student">
+			    	<div class="profile">
+			    		<h3>{{x.name}}</h3>
+			    		<p><span>Course:</span> {{x.course}}</p>
+			    		<a href="{{x.portfolio}}">View portfolio</a>
+			    	</div>
+			    	
+				</div>  
+			</div>
+		</div>
+	</div>
+
 </div>
+

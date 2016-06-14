@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MMU Student Websites</title>
+    <meta name="author" content="Piotr Osiak, Krisztian Pinter">
     <meta name="description" content="Content comes here">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Keywords">
@@ -33,17 +34,6 @@
             <h1>Information &amp; Communications</h1>
             <h2>Student Websites</h2>
         </div>
-		<!--nav>
-            <ul>
-                <!-- <li><a href="#/">Home</a></li>
-                <li><a href="#/"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                <li><a href="#/year-one">Year 1</a></li>
-                <li><a href="#/year-two">Year 2</a></li>
-                <li><a href="#/year-three">Year 3</a></li>
-                <li class="grads"><a href="#/graduates"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Our Graduates</a></li>
-            </ul>
-		</nav-->
-        
     <nav>
         <ul>
             <li ng-repeat="page in vm.pages" ng-class="{active: vm.activePage === page.name}"><a href="{{page.url}}" ng-click="vm.setActivePage(page.name)">{{page.name}}</a></li>

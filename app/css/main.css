@@ -116,10 +116,72 @@ footer .footerinfo p {
   footer .footerinfo p:after {
     clear: both; }
 
+.wrap123 {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  width: 960px;
+  max-width: 100%;
+  margin: auto;
+  padding: 5px; }
+  .wrap123 .student123 {
+    width: 360px;
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+    background: #2980B9;
+    color: #ECECEC; }
+    .wrap123 .student123 .stucon {
+      text-align: center; }
+      .wrap123 .student123 .stucon img {
+        width: 54px;
+        align-content: center;
+        float: left;
+        clear: right; }
+      .wrap123 .student123 .stucon .profile:before, .wrap123 .student123 .stucon .profile:after {
+        content: '';
+        display: table; }
+      .wrap123 .student123 .stucon .profile:after {
+        clear: both; }
+      .wrap123 .student123 .stucon .profile h3 {
+        font-size: 1.2em;
+        font-weight: 600; }
+      .wrap123 .student123 .stucon .profile p {
+        font-size: .9em; }
+        .wrap123 .student123 .stucon .profile p span {
+          font-weight: 600; }
+      .wrap123 .student123 .stucon .profile a {
+        float: left;
+        width: 100%;
+        background: #F2A845;
+        color: #1C1C1C;
+        text-align: center;
+        padding: 5px 35px;
+        text-decoration: none;
+        transition: all .2s ease-in-out; }
+        .wrap123 .student123 .stucon .profile a:hover {
+          background: #DF5430;
+          color: #ECECEC; }
+
+footer .footerinfo p {
+  *zoom: 1; }
+  footer .footerinfo p:before, footer .footerinfo p:after {
+    content: " ";
+    display: table; }
+  footer .footerinfo p:after {
+    clear: both; }
+
 main {
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  /* HOME PAGE STYLING */
+  /* YEAR ONE PAGE STYLING */ }
   main aside,
   main .myContent {
     display: inline-block; }
@@ -169,6 +231,104 @@ main {
       font-weight: 600;
       margin-top: 10px;
       margin-bottom: 10px; }
+  main .yearWrap {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 0; }
+    @media (max-width: 40em) {
+      main .yearWrap {
+        margin-top: 15px; } }
+    main .yearWrap .back {
+      position: relative;
+      top: 67px;
+      /* BACK IMAGE OPTIONAL */ }
+      main .yearWrap .back .backimage {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: -10;
+        background: url("../images/test.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 360px; }
+    main .yearWrap h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 3%;
+      margin-top: 2%; }
+    main .yearWrap .bg-transparent {
+      background: rgba(236, 236, 236, 0.92);
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px; }
+    main .yearWrap .bg-container {
+      width: 1200px;
+      max-width: 100%;
+      margin: auto;
+      padding: 10px; }
+      @media (max-width: 40em) {
+        main .yearWrap .bg-container {
+          border-radius: 0; } }
+      main .yearWrap .bg-container h2 {
+        text-align: center; }
+      main .yearWrap .bg-container .search {
+        text-align: center;
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+        font-size: 1em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-top: 1px solid #1A4F72;
+        padding-top: 15px; }
+        @media (max-width: 30em) {
+          main .yearWrap .bg-container .search {
+            margin-top: 25px;
+            margin-bottom: 25px; } }
+        main .yearWrap .bg-container .search p {
+          margin-bottom: 5px; }
+        main .yearWrap .bg-container .search input {
+          margin-left: 10px;
+          padding: 7px;
+          width: 150px;
+          border: none;
+          background: none;
+          border-bottom: 2px solid #29506F;
+          transition: all .3s ease-in-out;
+          font-size: .85em;
+          letter-spacing: 0.05em; }
+          main .yearWrap .bg-container .search input:focus {
+            color: #29506F;
+            outline: none; }
+    main .yearWrap .twogroups {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+      width: 960px;
+      max-width: 100%;
+      margin: auto;
+      padding: 5px;
+      margin-bottom: 10%;
+      border-bottom: 1px solid #1A4F72; }
+      main .yearWrap .twogroups .thegroups {
+        padding-top: 22px;
+        padding-bottom: 22px; }
+        main .yearWrap .twogroups .thegroups a {
+          text-decoration: none;
+          background: #F2A845;
+          color: #ECECEC;
+          font-size: 1.2em;
+          text-align: center;
+          padding: 10px;
+          transition: all .2s ease-in-out; }
+          main .yearWrap .twogroups .thegroups a:hover {
+            background: #DF5430; }
 
 footer .footerinfo p {
   *zoom: 1; }
