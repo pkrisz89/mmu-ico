@@ -83,7 +83,7 @@
           padding: 5px;
           line-height: 1.2em;
           text-decoration: none;
-          color: #1C1C1C;
+          color: #2980B9;
           font-weight: 400; }
           .wrap123 .student123--g-profile .stucon--industry h4 a:hover {
             text-decoration: underline;
@@ -97,9 +97,9 @@
         .wrap123 .student123--g-profile .stucon--industry p span {
           font-weight: 700; }
         .wrap123 .student123--g-profile .stucon--industry p:first-of-type {
-          color: #2980B9; }
+          color: #DF5430; }
       .wrap123 .student123--g-profile .stucon--industry .portfolio {
-        margin-top: 5%;
+        margin-top: 25px;
         padding: 0; }
         .wrap123 .student123--g-profile .stucon--industry .portfolio a {
           background: #1A4F72;

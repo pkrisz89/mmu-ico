@@ -46,8 +46,6 @@ header {
       list-style-type: none; }
       header nav ul li {
         float: left; }
-        header nav ul li i {
-          margin-right: 5px; }
         @media (max-width: 40em) {
           header nav ul li {
             width: 50%;
@@ -65,29 +63,29 @@ header {
               padding: 15px; } }
           header nav ul li a:hover {
             background: #1A4F72; }
-      header nav ul .grads {
-        float: right;
-        margin-right: 25px; }
-        @media (max-width: 40em) {
-          header nav ul .grads {
-            width: 100%;
-            text-align: center;
-            font-size: 1.2em;
-            margin: 0;
-            border-bottom: 1px solid #2980B9; } }
-        header nav ul .grads a {
-          background: #ECECEC;
-          color: #2980B9;
-          font-weight: 600; }
-          header nav ul .grads a i {
-            margin-right: 5px; }
-          header nav ul .grads a:hover {
-            color: #DF5430;
+        header nav ul li:last-of-type {
+          float: right;
+          margin-right: 25px; }
+          @media (max-width: 40em) {
+            header nav ul li:last-of-type {
+              width: 100%;
+              text-align: center;
+              font-size: 1.2em;
+              margin: 0;
+              border-bottom: 1px solid #2980B9; } }
+          header nav ul li:last-of-type a {
             background: #ECECEC;
-            text-decoration: underline;
-            border-bottom: none; }
-            @media (max-width: 40em) {
-              header nav ul .grads a:hover {
-                background: #e15f3d;
-                color: #ECECEC;
-                text-decoration: none; } }
+            color: #2980B9;
+            font-weight: 600; }
+            header nav ul li:last-of-type a i {
+              margin-right: 5px; }
+            header nav ul li:last-of-type a:hover {
+              color: #DF5430;
+              background: #ECECEC;
+              text-decoration: underline;
+              border-bottom: none; }
+              @media (max-width: 40em) {
+                header nav ul li:last-of-type a:hover {
+                  background: #e15f3d;
+                  color: #ECECEC;
+                  text-decoration: none; } }

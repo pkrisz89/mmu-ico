@@ -95,7 +95,7 @@
 					padding: 5px;
 					line-height: 1.2em;
 					text-decoration: none;
-					color: $dark;
+					color: $blue;
 					font-weight: $normal;
 					&:hover {
 						text-decoration: underline;
@@ -113,11 +113,11 @@
 					font-weight: $bold;
 				}//span
 				&:first-of-type {
-					color: $blue;
+					color: $orangeRed;
 				}//first-of-type
 			}//p
 			.portfolio {
-				margin-top: 5%;
+				margin-top: 25px;
 				padding: 0;
 				a {
 					background: $navyTwo;

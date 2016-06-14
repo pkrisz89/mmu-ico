@@ -4,6 +4,10 @@ main {
   padding: 0;
   /* HOME PAGE STYLING */
   /* YEAR ONE PAGE STYLING */ }
+  main a:link, main a:visited {
+    color: #2980B9; }
+  main a:hover, main a:active {
+    color: #DF5430; }
   main aside,
   main .myContent {
     display: inline-block; }
@@ -29,7 +33,8 @@ main {
         margin: 0;
         margin-top: 30px; } }
     main aside ul {
-      list-style-type: none; }
+      list-style-type: none;
+      margin-bottom: 10px; }
   main .myContent {
     margin-top: -67px;
     margin-bottom: 30px;

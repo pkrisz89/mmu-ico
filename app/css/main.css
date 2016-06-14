@@ -62,8 +62,6 @@ header {
       list-style-type: none; }
       header nav ul li {
         float: left; }
-        header nav ul li i {
-          margin-right: 5px; }
         @media (max-width: 40em) {
           header nav ul li {
             width: 50%;
@@ -81,32 +79,32 @@ header {
               padding: 15px; } }
           header nav ul li a:hover {
             background: #1A4F72; }
-      header nav ul .grads {
-        float: right;
-        margin-right: 25px; }
-        @media (max-width: 40em) {
-          header nav ul .grads {
-            width: 100%;
-            text-align: center;
-            font-size: 1.2em;
-            margin: 0;
-            border-bottom: 1px solid #2980B9; } }
-        header nav ul .grads a {
-          background: #ECECEC;
-          color: #2980B9;
-          font-weight: 600; }
-          header nav ul .grads a i {
-            margin-right: 5px; }
-          header nav ul .grads a:hover {
-            color: #DF5430;
+        header nav ul li:last-of-type {
+          float: right;
+          margin-right: 25px; }
+          @media (max-width: 40em) {
+            header nav ul li:last-of-type {
+              width: 100%;
+              text-align: center;
+              font-size: 1.2em;
+              margin: 0;
+              border-bottom: 1px solid #2980B9; } }
+          header nav ul li:last-of-type a {
             background: #ECECEC;
-            text-decoration: underline;
-            border-bottom: none; }
-            @media (max-width: 40em) {
-              header nav ul .grads a:hover {
-                background: #e15f3d;
-                color: #ECECEC;
-                text-decoration: none; } }
+            color: #2980B9;
+            font-weight: 600; }
+            header nav ul li:last-of-type a i {
+              margin-right: 5px; }
+            header nav ul li:last-of-type a:hover {
+              color: #DF5430;
+              background: #ECECEC;
+              text-decoration: underline;
+              border-bottom: none; }
+              @media (max-width: 40em) {
+                header nav ul li:last-of-type a:hover {
+                  background: #e15f3d;
+                  color: #ECECEC;
+                  text-decoration: none; } }
 
 footer .footerinfo p {
   *zoom: 1; }
@@ -201,7 +199,7 @@ footer .footerinfo p {
           padding: 5px;
           line-height: 1.2em;
           text-decoration: none;
-          color: #1C1C1C;
+          color: #2980B9;
           font-weight: 400; }
           .wrap123 .student123--g-profile .stucon--industry h4 a:hover {
             text-decoration: underline;
@@ -215,9 +213,9 @@ footer .footerinfo p {
         .wrap123 .student123--g-profile .stucon--industry p span {
           font-weight: 700; }
         .wrap123 .student123--g-profile .stucon--industry p:first-of-type {
-          color: #2980B9; }
+          color: #DF5430; }
       .wrap123 .student123--g-profile .stucon--industry .portfolio {
-        margin-top: 5%;
+        margin-top: 25px;
         padding: 0; }
         .wrap123 .student123--g-profile .stucon--industry .portfolio a {
           background: #1A4F72;
@@ -242,6 +240,10 @@ main {
   padding: 0;
   /* HOME PAGE STYLING */
   /* YEAR ONE PAGE STYLING */ }
+  main a:link, main a:visited {
+    color: #2980B9; }
+  main a:hover, main a:active {
+    color: #DF5430; }
   main aside,
   main .myContent {
     display: inline-block; }
@@ -267,7 +269,8 @@ main {
         margin: 0;
         margin-top: 30px; } }
     main aside ul {
-      list-style-type: none; }
+      list-style-type: none;
+      margin-bottom: 10px; }
   main .myContent {
     margin-top: -67px;
     margin-bottom: 30px;
@@ -445,7 +448,7 @@ footer .footerinfo p {
   max-width: 100%;
   margin: auto;
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 0 0 85px 0;
   margin-bottom: 50px; }
   .error .errorCon {
     margin: 0;
