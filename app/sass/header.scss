@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixins";
 
+.active {
+    background:  #1A4F72;
+}
+
 header {
 	margin: 0;
 	padding: 0;
