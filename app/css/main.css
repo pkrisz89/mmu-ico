@@ -124,7 +124,9 @@ footer .footerinfo p {
   width: 960px;
   max-width: 100%;
   margin: auto;
-  padding: 5px; }
+  padding: 5px;
+  /* Student Profiles */
+  /* Graduate Profiles Modifier */ }
   .wrap123 .student123 {
     width: 360px;
     max-width: 100%;
@@ -164,6 +166,64 @@ footer .footerinfo p {
         .wrap123 .student123 .stucon .profile a:hover {
           background: #DF5430;
           color: #ECECEC; }
+  .wrap123 .student123--g-profile {
+    padding: 10px; }
+    .wrap123 .student123--g-profile .stucon--industry {
+      width: 320px;
+      text-align: right;
+      background: #fff;
+      float: left;
+      padding: 10px;
+      border: 2px solid #29506F; }
+      .wrap123 .student123--g-profile .stucon--industry img {
+        background: #29506F;
+        position: relative;
+        bottom: 0;
+        padding: 2px;
+        margin: 5px;
+        width: 64px;
+        height: auto;
+        float: left;
+        clear: right; }
+      .wrap123 .student123--g-profile .stucon--industry h3 {
+        margin: 0;
+        font-size: 1.35em;
+        font-weight: 600;
+        padding: 5px;
+        line-height: 1.2em; }
+      .wrap123 .student123--g-profile .stucon--industry h4 {
+        margin: 0; }
+        .wrap123 .student123--g-profile .stucon--industry h4 a {
+          font-size: 1.15em;
+          padding: 5px;
+          line-height: 1.2em;
+          text-decoration: none;
+          color: #1C1C1C;
+          font-weight: 400; }
+          .wrap123 .student123--g-profile .stucon--industry h4 a:hover {
+            text-decoration: underline;
+            color: #DF5430; }
+      .wrap123 .student123--g-profile .stucon--industry p {
+        margin: 0;
+        margin-top: 5px;
+        padding: 0 5px;
+        font-size: 1em;
+        line-height: 1.2em; }
+        .wrap123 .student123--g-profile .stucon--industry p span {
+          font-weight: 700; }
+        .wrap123 .student123--g-profile .stucon--industry p:first-of-type {
+          color: #2980B9; }
+      .wrap123 .student123--g-profile .stucon--industry .portfolio {
+        margin-top: 5%;
+        padding: 0; }
+        .wrap123 .student123--g-profile .stucon--industry .portfolio a {
+          background: #1A4F72;
+          padding: 10px 45px;
+          color: #fff;
+          text-decoration: none;
+          transition: all .2s ease-in-out; }
+          .wrap123 .student123--g-profile .stucon--industry .portfolio a:hover {
+            background: #1b354a; }
 
 footer .footerinfo p {
   *zoom: 1; }
@@ -256,6 +316,15 @@ main {
       text-align: center;
       margin-bottom: 3%;
       margin-top: 2%; }
+      @media (max-width: 40em) {
+        main .yearWrap h1 {
+          width: 90%;
+          margin: auto;
+          font-size: 1.75em;
+          margin-top: 10%; } }
+      @media (max-width: 30em) {
+        main .yearWrap h1 {
+          margin-top: 20%; } }
     main .yearWrap .bg-transparent {
       background: rgba(236, 236, 236, 0.92);
       border-top-left-radius: 7px;
@@ -359,6 +428,105 @@ footer {
         display: block; }
         footer .footerinfo p a:hover {
           text-decoration: underline; }
+
+footer .footerinfo p {
+  *zoom: 1; }
+  footer .footerinfo p:before, footer .footerinfo p:after {
+    content: " ";
+    display: table; }
+  footer .footerinfo p:after {
+    clear: both; }
+
+.error {
+  width: 960px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 30px 0;
+  margin-bottom: 50px; }
+  .error .errorCon {
+    margin: 0;
+    padding: 0; }
+    .error .errorCon:before, .error .errorCon:after {
+      content: '';
+      display: table; }
+    .error .errorCon:after {
+      clear: both; }
+    .error .errorCon h1 {
+      font-size: 6em;
+      font-weight: 400;
+      font-family: "Playfair Display", serif;
+      color: #DF5430;
+      animation: pulse 3s infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+
+@-moz-keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+
+@-ms-keyframes pulse {
+  .error .errorCon h1 0% {
+    color: #DF5430; }
+  .error .errorCon h1 50% {
+    color: #F2A845; }
+  .error .errorCon h1 100% {
+    color: #DF5430; } }
+
+@-o-keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+
+@keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+    .error .errorCon h2 {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #29506F; }
+    .error .errorCon p {
+      font-size: 1.2em;
+      font-weight: 600; }
+    .error .errorCon .return {
+      border: none;
+      margin-top: 35px; }
+      .error .errorCon .return a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        background: #29506F;
+        color: #fff;
+        padding: 25px;
+        transition: all .2s ease-in-out; }
+        .error .errorCon .return a:hover {
+          background: #DF5430; }
+    @media (max-width: 40em) {
+      .error .errorCon h1 {
+        font-size: 5em;
+        animation: none; }
+      .error .errorCon h2 {
+        font-size: 2em; }
+      .error .errorCon p {
+        word-break: break-word; } }
 
 *, *:after, *:before {
   margin: 0;

@@ -40,18 +40,20 @@
 		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}],
-
+	
 	"graduates": [{
 		"name": "John Doe Graduate",
 		"company": "Microsoft",
 		"role": "UX Designer",
 		"twitter": "JohnDoeTweets",
+		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}, {
 		"name": "Mary Doe Graduate",
 		"company": "Sky",
 		"role": "Web Developer",
 		"twitter": "MaryTweets",
+		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}]
 }

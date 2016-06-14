@@ -81,6 +81,15 @@ main {
       text-align: center;
       margin-bottom: 3%;
       margin-top: 2%; }
+      @media (max-width: 40em) {
+        main .yearWrap h1 {
+          width: 90%;
+          margin: auto;
+          font-size: 1.75em;
+          margin-top: 10%; } }
+      @media (max-width: 30em) {
+        main .yearWrap h1 {
+          margin-top: 20%; } }
     main .yearWrap .bg-transparent {
       background: rgba(236, 236, 236, 0.92);
       border-top-left-radius: 7px;

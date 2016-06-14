@@ -13,6 +13,8 @@
 	max-width: 100%;
 	margin: auto;
 	padding: 5px;
+
+	/* Student Profiles */
 	.student123 {
 		width: 360px;
 		max-width: 100%;
@@ -31,7 +33,6 @@
 			}//img
 			.profile {
 				@include clearfix;
-				//float: left;
 				h3 {
 					font-size: 1.2em;
 					font-weight: $semibold;
@@ -59,4 +60,76 @@
 			}//profile
 		}//stucon
 	}//student123
+	/* Graduate Profiles Modifier */
+	.student123--g-profile {
+		padding: 10px;
+		.stucon--industry {
+			width: 320px;
+			text-align: right;
+			background: $white;
+			float: left;
+			padding: 10px;
+			border: 2px solid $flatBlue;
+			img {
+				background: $flatBlue;
+				position: relative;
+				bottom: 0;
+				padding: 2px;
+				margin: 5px;
+				width: 64px;
+				height: auto;
+				float: left;
+				clear: right;
+			}//img
+			h3 {
+				margin: 0;
+				font-size: 1.35em;
+				font-weight: $semibold;
+				padding: 5px;
+				line-height: 1.2em;
+			}//h3
+			h4 {
+				margin: 0;
+				a {
+					font-size: 1.15em;
+					padding: 5px;
+					line-height: 1.2em;
+					text-decoration: none;
+					color: $dark;
+					font-weight: $normal;
+					&:hover {
+						text-decoration: underline;
+						color: $orangeRed;
+					}
+				}//a
+			}//h4
+			p {
+				margin: 0;
+				margin-top: 5px;
+				padding: 0 5px;
+				font-size: 1em;
+				line-height: 1.2em;
+				span {
+					font-weight: $bold;
+				}//span
+				&:first-of-type {
+					color: $blue;
+				}//first-of-type
+			}//p
+			.portfolio {
+				margin-top: 5%;
+				padding: 0;
+				a {
+					background: $navyTwo;
+					padding: 10px 45px;
+					color: $white;
+					text-decoration: none;
+					transition: all .2s ease-in-out;
+					&:hover {
+						background: darken($flatBlue, 10);
+					}//hover
+				}//a link .portfolio
+			} //button/portfolio
+		}//stucon--industry
+	}//students123--g-profile
 }//wrap123

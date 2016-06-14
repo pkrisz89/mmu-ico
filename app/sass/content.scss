@@ -98,12 +98,21 @@ main {
 			text-align: center;
 			margin-bottom: 3%;
 			margin-top: 2%;
-		}
+			@include breakpoint(med) {
+				width: 90%;
+				margin: auto;
+				font-size: 1.75em;
+				margin-top: 10%;
+			}//bp-med
+			@include breakpoint(sml) {
+				margin-top: 20%;
+			}//bp-sml
+		} //h1
 		.bg-transparent {
 			background: $contentBox;
 			border-top-left-radius: 7px;
 			border-top-right-radius: 7px;
-		}
+		}//bg-transparent
 		.bg-container {
 			width: 1200px;
 			max-width: 100%;
