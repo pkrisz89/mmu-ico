@@ -95,12 +95,10 @@ main {
 				z-index: -10;
 				@include backImage('../images/test.jpg', 360px, cover);
 				@include breakpoint(med) {
-					display: none;
-					//top: 407px;
+					top: 407px;
 				}//bp-med
 				@include breakpoint(sml) {
-					display: none;
-					//top: 399px;
+					top: 399px;
 				}//bp-small
 			}//backimage
 				/* BACK IMAGE OPTIONAL */
