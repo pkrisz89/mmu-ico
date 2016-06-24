@@ -1,0 +1,30 @@
+<div class="yearWrap">
+
+<!-- NO BACK IMAGE -->
+	<!-- THE TITLE -->
+	<h1>Our Graduates <span>Working in the industries</span></h1>
+	<!-- bg-container -->
+	<div class="bg-container">
+		<!-- SEARCH FEATURE -->
+		<div class="search">
+			<p>Search by name:<input ng-model="byName" placeholder="Search..."></p>	
+		</div>
+		
+		<!-- GRADUATED STUDENTS PROFILES -->
+		<div class="wrap123">
+			<div class="student123--g-profile" ng-repeat="x in vm.graduates | filter: byName">
+				<div class="stucon--industry">
+					<img ng-src="images/{{x.avatar}}" alt="student">
+					<h3>{{x.name}}</h3>
+					<h4><a href="http://twitter.com/{{x.twitter}}" target="_blank">@FollowTwitter</a></h4>
+					<p>Working at: <span>{{x.company}}</span></p>
+					<p>Working as: <span>{{x.role}}</span></p>
+					<p class="portfolio"><a href="{{x.portfolio}}" target="_blank">Visit Site</a></p>
+				</div>   	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	

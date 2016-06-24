@@ -1,0 +1,31 @@
+<div class="yearWrap">
+
+	<div class="back">
+		<span class="backimage"></span>
+	</div>
+
+	<h1>Year Three</h1>
+	<div class="bg-container bg-transparent">
+
+		<h2>Student Portfolio Sites</h2>
+		<p>Through the coursework students are encouraged to develop a live portfolio which is critiqued at a 'portfolio show' with professional developers and employers. Students are then asked to develop two independent projects, working on a technologies they wish to learn and develop as part of their skill set.</p>
+		<p>All student web sites are sponsored and hosted by our friends at <a href="">34sp.com</a></p>
+
+		<div class="search">
+			<p>Search by name:<input ng-model="byName" placeholder="Search..."></p>	
+		</div>
+
+		<div class="wrap123">
+			<div class="student123" ng-repeat="x in vm.yearThree | filter: byName">
+				<div class="stucon">
+					<img ng-src="images/{{x.avatar}}" alt="student" title="Student">
+					<div class="profile">
+						<h3>{{x.name}}</h3>
+					    <p>Course: {{x.course}}</p>
+					    <a href="{{x.portfolio}}">View portfolio</a>	
+					</div>						
+				</div>			    
+			</div>	
+		</div>
+	</div>
+</div>
