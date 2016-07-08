@@ -1,0 +1,90 @@
+.error {
+  width: 960px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 85px 0;
+  margin-bottom: 50px; }
+  .error .errorCon {
+    margin: 0;
+    padding: 0; }
+    .error .errorCon:before, .error .errorCon:after {
+      content: '';
+      display: table; }
+    .error .errorCon:after {
+      clear: both; }
+    .error .errorCon h1 {
+      font-size: 6em;
+      font-weight: 400;
+      font-family: "Playfair Display", serif;
+      color: #DF5430;
+      animation: pulse 3s infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+
+@-moz-keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+
+@-ms-keyframes pulse {
+  .error .errorCon h1 0% {
+    color: #DF5430; }
+  .error .errorCon h1 50% {
+    color: #F2A845; }
+  .error .errorCon h1 100% {
+    color: #DF5430; } }
+
+@-o-keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+
+@keyframes pulse {
+  0% {
+    color: #DF5430; }
+  50% {
+    color: #F2A845; }
+  100% {
+    color: #DF5430; } }
+    .error .errorCon h2 {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #29506F; }
+    .error .errorCon p {
+      font-size: 1.2em;
+      font-weight: 600; }
+    .error .errorCon .return {
+      border: none;
+      margin-top: 35px; }
+      .error .errorCon .return a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        background: #29506F;
+        color: #fff;
+        padding: 25px;
+        transition: all .2s ease-in-out; }
+        .error .errorCon .return a:hover {
+          background: #DF5430; }
+    @media (max-width: 40em) {
+      .error .errorCon h1 {
+        font-size: 5em;
+        animation: none; }
+      .error .errorCon h2 {
+        font-size: 2em; }
+      .error .errorCon p {
+        word-break: break-word; } }

@@ -1,24 +1,64 @@
 {
 	"yearOne": [{
-		"name": "John Doe from year1",
+		"name": "John Doe",
 		"course": "Web Dev (year1)",
 		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}, {
-		"name": "Mary Doe from year1",
+		"name": "Mary Doe",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Jack Sparrow",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Spider Man",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Batman",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Superman",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Batman",
 		"course": "Web Dev (year1)",
 		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}],
 
 	"yearTwo": [{
-		"name": "John Doe from year2",
+		"name": "Bud Spencer",
 		"course": "Web Dev (year2)",
 		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}, {
-		"name": "Mary Doe from year2",
+		"name": "Terence Hill",
 		"course": "Web Dev (year2)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Incredible Hulk",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Clark Kent",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Lady Diana",
+		"course": "Web Dev (year1)",
 		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}],
@@ -35,23 +75,40 @@
 		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}, {
-		"name": "Mary Doe from year2",
-		"course": "Web Dev (year2)",
+		"name": "Mary Doe from year3",
+		"course": "Web Dev (year3)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Bill Gates",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Steve Jobs",
+		"course": "Web Dev (year1)",
+		"portfolio": "http://none",
+		"avatar": "default-user.png"
+	}, {
+		"name": "Dr Dre",
+		"course": "Web Dev (year1)",
 		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}],
-
+	
 	"graduates": [{
 		"name": "John Doe Graduate",
 		"company": "Microsoft",
 		"role": "UX Designer",
 		"twitter": "JohnDoeTweets",
+		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}, {
 		"name": "Mary Doe Graduate",
 		"company": "Sky",
 		"role": "Web Developer",
 		"twitter": "MaryTweets",
+		"portfolio": "http://none",
 		"avatar": "default-user.png"
 	}]
 }

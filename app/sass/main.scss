@@ -6,6 +6,7 @@
 @import "profiles";
 @import "content";
 @import "footer";
+@import "404";
 
 
 *, *:after, *:before {
@@ -24,18 +25,24 @@
 }
 
 
+.wrapper {
+    @include clearfix;
+    height: 100%;
+    @include border-box;
+}
+
 //Grids 
 
-.wrapper, .row {
-    @extend %clearfix;
-    }
+// .wrapper, .row {
+//     @extend %clearfix;
+//     }
       
-[class*='column-'] {
-    float: left;
-    padding: 1em;
-    width: 100%;
-    min-height: 1px; 
-    }   
+// [class*='column-'] {
+//     float: left;
+//     padding: 1em;
+//     width: 100%;
+//     min-height: 1px; 
+//     }   
 
     
  

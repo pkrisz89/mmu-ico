@@ -21,7 +21,8 @@ $orangeLight	: #F2A845; //242,168,69
 
 // colours for content
 $sidebarBlue	: rgba(41,128,185, .15); //lighten($blue, 15%); 
-$contentBox		: lighten($greyThird, 75%);
+//$contentBox		: lighten($greyThird, 75%);
+$contentBox		: rgba(236,236,236, .92);
 $activeNav		: lighten($navyTwo, 75%);
 $background		: $greySecond;
 $studentButton	: $blue;
@@ -46,3 +47,7 @@ $grid-max-width		: 65em;
 // breakpoints
 $breakpoint-small	: "only screen and (min-width: 20em)";
 $breakpoint-medium	: "only screen and (min-width: 50em)";
+
+$large			:	60em; //Desktop
+$medium			:	40em; //Mobile
+$small			:	30em; //Mobile

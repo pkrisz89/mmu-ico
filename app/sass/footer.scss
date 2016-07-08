@@ -5,7 +5,12 @@ footer {
 	color: $greyThird;
 	font-size: .75em;
 	margin: 0;
+	@include breakpoint(med) {
+		text-align: center;
+	}//bp-med
+	text-align: right;
 	background: $dark;
+
 	.footerinfo {
 		@include border-box;
 		display: inline-block;
@@ -24,4 +29,5 @@ footer {
 			}//a
 		}//p
 	} //footerinfo
+	
 }//footer

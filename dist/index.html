@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-GB" ng-app="studentApp">
+
+<head>
+  <base href="http://www.piijeidesigns.co.uk/mmu/#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MMU Student Websites</title>
+  <meta name="author" content="Piotr Osiak, Krisztian Pinter">
+  <meta name="description" content="Content comes here">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Keywords">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700%7CPlayfair+Display' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-controller="dataController as vm">
+
+  <!--SKIPLINKS-->
+  <p class="skiplinks">
+    <a href="#skipnav">Skip to content</a>
+    <a href="#skiptonav">Skip to navigation</a>
+  </p>
+
+  <header role="banner">
+    <!--NAVIGATION COMES HERE-->
+    <div class="intro">
+      <img src="images/logo-mmu.svg" alt="mmu logo" title="Manchester Metropolitan University logo">
+      <h1>Information &amp; Communications</h1>
+      <h2>Student Websites</h2>
+    </div>
+    <nav>
+      <ul>
+        <li ng-repeat="page in vm.pages" ng-class="{active: vm.activePage === page.name}"><a href="{{page.url}}" ng-click="vm.setActivePage(page.name)">{{page.name}}</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <main class="wrapper" id="skipnav" ng-view>
+    <!-- CONTENT WRITTEN IN TEMPLATE HTML PAGES USING ANGULAR JS AND JSON FILE -->
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footerinfo">
+      <p>MMU &copy; 2016</p>
+      <!-- MMU Copyright -->
+
+      <p>Code and Design by:
+        <a href="http://www.piijeidesigns.co.uk" target="_blank">Piotr Osiak</a>
+        <a href="http://www.krispinter.co.uk" target="_blank">Krisztian Pinter</a>
+      </p>
+      <!-- Coders -->
+    </div>
+  </footer>
+</body>
+
+</html>

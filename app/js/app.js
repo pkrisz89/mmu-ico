@@ -1,9 +1,12 @@
 (function(){
+    
 
 var app = angular.module("studentApp", ['ngRoute']); 
 
-app.controller('dataController', function($http) {
+app.controller('dataController', function($http, $location) {
     var vm = this;
+    vm.activePage = 'Home';
+    
     $http.get("students.json").then(function(response) {
         vm.yearOne = response.data.yearOne;
         vm.yearTwo = response.data.yearTwo;
@@ -12,11 +15,37 @@ app.controller('dataController', function($http) {
         vm.graduates = response.data.graduates;
     });
     
+        vm.setActivePage = function(name) {
+            vm.activePage = name;
+        };
+    
+    vm.pages = [
+            {
+                'name': 'Home',
+                'url': '/'
+            },
+            {
+                'name': 'Year One',
+                'url': '/year-one'     
+            },
+            {
+                'name': 'Year Two',
+                'url': '/year-two'
+            },
+            {
+                'name': 'Year Three',
+                'url': '/year-three'
+            },
+            {
+                'name': 'Graduates',
+                'url': '/graduates'
+            }];
     
     });
+    
 
     
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "templates/home.html"
@@ -37,7 +66,10 @@ app.config(function($routeProvider) {
         templateUrl : "templates/404.html"
     })
     .otherwise({ redirectTo: '/404' });
+    
+    $locationProvider.html5Mode(true);
 });
+    
     
 }());
 

@@ -1,3 +1,6 @@
+.active {
+  background: #1A4F72; }
+
 header {
   margin: 0;
   padding: 0;
@@ -10,6 +13,10 @@ header {
     text-align: center;
     width: 35%;
     color: #EFF3F3; }
+    @media (max-width: 40em) {
+      header .intro {
+        width: 100%;
+        margin: 0; } }
     header .intro h1 {
       font-size: 1.55em;
       font-weight: 600; }
@@ -29,28 +36,56 @@ header {
     right: 0;
     width: 60%;
     background: #2980B9; }
+    @media (max-width: 40em) {
+      header nav {
+        position: relative;
+        width: 100%;
+        top: 0; } }
     header nav ul {
       display: block;
       list-style-type: none; }
       header nav ul li {
         float: left; }
+        @media (max-width: 40em) {
+          header nav ul li {
+            width: 50%;
+            text-align: center;
+            background: #2980B9; } }
         header nav ul li a {
           text-decoration: none;
           font-size: .9em;
           color: #EFF3F3;
           padding: 10px;
           display: block; }
+          @media (max-width: 40em) {
+            header nav ul li a {
+              font-weight: 600;
+              padding: 15px; } }
           header nav ul li a:hover {
             background: #1A4F72; }
-      header nav ul .grads {
-        float: right;
-        margin-right: 25px; }
-        header nav ul .grads a {
-          background: #ECECEC;
-          color: #DF5430;
-          font-weight: 600; }
-          header nav ul .grads a i {
-            margin-right: 5px; }
-          header nav ul .grads a:hover {
+        header nav ul li:last-of-type {
+          float: right;
+          margin-right: 25px; }
+          @media (max-width: 40em) {
+            header nav ul li:last-of-type {
+              width: 100%;
+              text-align: center;
+              font-size: 1.2em;
+              margin: 0;
+              border-bottom: 1px solid #2980B9; } }
+          header nav ul li:last-of-type a {
             background: #ECECEC;
-            text-decoration: underline; }
+            color: #2980B9;
+            font-weight: 600; }
+            header nav ul li:last-of-type a i {
+              margin-right: 5px; }
+            header nav ul li:last-of-type a:hover {
+              color: #DF5430;
+              background: #ECECEC;
+              text-decoration: underline;
+              border-bottom: none; }
+              @media (max-width: 40em) {
+                header nav ul li:last-of-type a:hover {
+                  background: #e15f3d;
+                  color: #ECECEC;
+                  text-decoration: none; } }

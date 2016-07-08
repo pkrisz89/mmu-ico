@@ -1,12 +1,15 @@
 @import "variables";
 @import "mixins";
 
+.active {
+    background: $navyTwo;
+}
+
 header {
 	margin: 0;
 	padding: 0;
 
 	/* Header Logo */
-
 	.intro {
 		background: $blue;
 		padding: 10px;
@@ -14,6 +17,10 @@ header {
 		text-align: center;
 		width: 35%;
 		color: $lightGrey;
+		@include breakpoint(med) {
+			width: 100%;
+			margin: 0;
+		}//bp-med
 		h1 {
 			font-size: 1.55em;
 			font-weight: $semibold;
@@ -31,7 +38,6 @@ header {
 	}//intro
 
 	/* Navigation */
-
 	nav {
 		margin: 0;
 		padding: 0;
@@ -40,39 +46,66 @@ header {
 		right: 0;
 		width: 60%;
 		background: $blue;
+		@include breakpoint(med) {
+			position: relative;
+			width: 100%;
+			top: 0;
+		}//bp-med
 		ul {
 			display: block;
 			list-style-type: none;
 			li {
 				float: left;
+				@include breakpoint(med) {
+					width: 50%;
+					text-align: center;
+					background: $blue;
+				}//bp-med
 				a {
 					text-decoration: none;
 					font-size: .9em;
 					color: $lightGrey;
 					padding: 10px;
 					display: block;
+					@include breakpoint(med) {
+						font-weight: $semibold;
+						padding: 15px;	
+					}//bp-med
 					&:hover {
 						background: $navyTwo;
 					}//hover-nav
 				}//a-nav
+				&:last-of-type {
+					float: right;
+					margin-right: 25px;
+					@include breakpoint(med) {
+						width: 100%;
+						text-align: center;
+						font-size: 1.2em;
+						margin: 0;
+						border-bottom: 1px solid $blue;
+					}//bp-med
+					a {
+						background: $background;
+						color: $blue;
+						font-weight: $semibold;
+						i { //icon grad-hat
+							margin-right: 5px;
+						}
+						&:hover {
+							color: $orangeRed;
+							background: $background; 
+							text-decoration: underline;
+							border-bottom: none;
+							@include breakpoint(med) {
+								background: lighten($orangeRed, 3);
+								color: $background;
+								text-decoration: none;
+							}//bp-med
+						}//hover
+					}//a	
+				}//last-of-type
 			}//li
-			.grads {
-				float: right;
-				margin-right: 25px;
-				a {
-					background: $background;
-					color: $orangeRed;
-					font-weight: $semibold;
-					i { //icon grad-hat
-						margin-right: 5px;
-					}
-					&:hover {
-						background: $background; 
-						text-decoration: underline;
-					}//hover
-				}//a	
-			}//grads
 		}//ul
 	}//nav
-
 }//header

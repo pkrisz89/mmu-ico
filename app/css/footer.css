@@ -10,7 +10,11 @@ footer {
   color: #CBCACA;
   font-size: .75em;
   margin: 0;
+  text-align: right;
   background: #1C1C1C; }
+  @media (max-width: 40em) {
+    footer {
+      text-align: center; } }
   footer .footerinfo {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

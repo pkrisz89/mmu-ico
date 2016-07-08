@@ -1,0 +1,111 @@
+.wrap123 {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  width: 960px;
+  max-width: 100%;
+  margin: auto;
+  padding: 5px;
+  /* Student Profiles */
+  /* Graduate Profiles Modifier */ }
+  .wrap123 .student123 {
+    width: 360px;
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+    background: #2980B9;
+    color: #ECECEC; }
+    .wrap123 .student123 .stucon {
+      text-align: center; }
+      .wrap123 .student123 .stucon img {
+        width: 54px;
+        align-content: center;
+        float: left;
+        clear: right; }
+      .wrap123 .student123 .stucon .profile:before, .wrap123 .student123 .stucon .profile:after {
+        content: '';
+        display: table; }
+      .wrap123 .student123 .stucon .profile:after {
+        clear: both; }
+      .wrap123 .student123 .stucon .profile h3 {
+        font-size: 1.2em;
+        font-weight: 600; }
+      .wrap123 .student123 .stucon .profile p {
+        font-size: .9em; }
+        .wrap123 .student123 .stucon .profile p span {
+          font-weight: 600; }
+      .wrap123 .student123 .stucon .profile a {
+        float: left;
+        width: 100%;
+        background: #F2A845;
+        color: #1C1C1C;
+        text-align: center;
+        padding: 5px 35px;
+        text-decoration: none;
+        transition: all .2s ease-in-out; }
+        .wrap123 .student123 .stucon .profile a:hover {
+          background: #DF5430;
+          color: #ECECEC; }
+  .wrap123 .student123--g-profile {
+    padding: 10px; }
+    .wrap123 .student123--g-profile .stucon--industry {
+      width: 320px;
+      text-align: right;
+      background: #fff;
+      float: left;
+      padding: 10px;
+      border: 2px solid #29506F; }
+      .wrap123 .student123--g-profile .stucon--industry img {
+        background: #29506F;
+        position: relative;
+        bottom: 0;
+        padding: 2px;
+        margin: 5px;
+        width: 64px;
+        height: auto;
+        float: left;
+        clear: right; }
+      .wrap123 .student123--g-profile .stucon--industry h3 {
+        margin: 0;
+        font-size: 1.35em;
+        font-weight: 600;
+        padding: 5px;
+        line-height: 1.2em; }
+      .wrap123 .student123--g-profile .stucon--industry h4 {
+        margin: 0; }
+        .wrap123 .student123--g-profile .stucon--industry h4 a {
+          font-size: 1.15em;
+          padding: 5px;
+          line-height: 1.2em;
+          text-decoration: none;
+          color: #2980B9;
+          font-weight: 400; }
+          .wrap123 .student123--g-profile .stucon--industry h4 a:hover {
+            text-decoration: underline;
+            color: #DF5430; }
+      .wrap123 .student123--g-profile .stucon--industry p {
+        margin: 0;
+        margin-top: 5px;
+        padding: 0 5px;
+        font-size: 1em;
+        line-height: 1.2em; }
+        .wrap123 .student123--g-profile .stucon--industry p span {
+          font-weight: 700; }
+        .wrap123 .student123--g-profile .stucon--industry p:first-of-type {
+          color: #DF5430; }
+      .wrap123 .student123--g-profile .stucon--industry .portfolio {
+        margin-top: 25px;
+        padding: 0; }
+        .wrap123 .student123--g-profile .stucon--industry .portfolio a {
+          background: #1A4F72;
+          padding: 10px 45px;
+          color: #fff;
+          text-decoration: none;
+          transition: all .2s ease-in-out; }
+          .wrap123 .student123--g-profile .stucon--industry .portfolio a:hover {
+            background: #1b354a; }
