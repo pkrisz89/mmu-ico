@@ -1,0 +1,7 @@
+<p>Search by name:<input ng-model="byName"></p>
+<div ng-repeat="x in vm.yearOne | filter: byName">
+    <h3>{{x.name}}</h3>
+    <img ng-src="images/{{x.avatar}}" alt="">
+    <p>Course: {{x.course}}</p>
+    <a href="{{x.portfolio}}">View portfolio</a>
+</div>

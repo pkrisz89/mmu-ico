@@ -11,6 +11,8 @@ app.controller('dataController', function($http) {
         vm.yearThree = response.data.yearThree;
         vm.graduates = response.data.graduates;
     });
+    
+    
     });
 
     
