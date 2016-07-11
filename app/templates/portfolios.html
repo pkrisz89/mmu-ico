@@ -1,0 +1,13 @@
+<div class="wrap123">
+			<div class="student123" ng-repeat="x in vm.yearOne | filter: byName">
+				<div class="stucon"> <!-- Student Profiles Container -->
+			    	<img ng-src="images/{{x.avatar}}" alt="student profile">
+			    	<div class="profile">
+			    		<h3>{{x.name}}</h3>
+			    		<p><span>Course:</span> {{x.course}}</p>
+			    		<a href="{{x.portfolio}}">View portfolio</a>
+			    	</div>
+			    	
+				</div>  
+			</div>
+		</div>

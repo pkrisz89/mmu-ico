@@ -69,6 +69,13 @@ app.config(function($routeProvider, $locationProvider) {
     
     $locationProvider.html5Mode(true);
 });
+
+app.directive('portfolios', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'templates/portfolios.html'
+  };
+});
     
     
 }());
